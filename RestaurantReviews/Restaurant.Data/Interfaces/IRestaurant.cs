@@ -12,6 +12,5 @@ namespace RestaurantReviews.Interfaces
         string Name { get; set; }
         string FoodType { get; set; }
         string Address { get; set; }
-        int AverageRating { get; set; }
     }
 }

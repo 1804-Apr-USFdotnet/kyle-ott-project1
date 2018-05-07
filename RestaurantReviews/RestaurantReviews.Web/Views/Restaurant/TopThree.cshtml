@@ -1,0 +1,25 @@
+﻿@model Restaurant.Web.Models.RestRevViewModel
+
+@{
+    ViewBag.Title = "Top Three";
+}
+
+<h2>TopThree</h2>
+
+<div>
+    <h4>Top Three Restaurants Based On Rating</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Top Three:")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.topThree)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "DisplayAll")
+</p>

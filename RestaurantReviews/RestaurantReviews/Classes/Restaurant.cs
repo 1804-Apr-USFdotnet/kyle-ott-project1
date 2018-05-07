@@ -13,7 +13,7 @@ namespace RestaurantReviews
         public string Name { get; set; }
         public string FoodType { get; set; }
         public string Address { get; set; }
-        public int AverageRating { get; set; }
+        public double AverageRating { get; set; }
 
     }
 }

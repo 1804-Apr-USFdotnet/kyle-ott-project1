@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Restaurant.Data.Review>
+
+@{
+    ViewBag.Title = "Reviews";
+}
+
+<h2>Reviews</h2>
+
+<p>
+    @{
+        var ID = HttpContext.Current.Request.RequestContext.RouteData.Values["id"];
+    }
+    @Html.ActionLink("Create New", "Create", "Review", new { id = ID }, null)
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "Review", new { id=item.ID }, null) |
+            @Html.ActionLink("Delete", "Delete", "Review", new { id=item.ID}, null)
+        </td>
+    </tr>
+}
+
+</table>

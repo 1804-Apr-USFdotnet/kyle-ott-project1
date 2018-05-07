@@ -72,7 +72,8 @@ namespace RestaurantReviews.Model
             var dataModel = new Data.Restaurant()
             {
                 Name = libModel.Name,
-                FoodType = libModel.FoodType
+                FoodType = libModel.FoodType,
+                Address = libModel.Address
             };
             return dataModel;
         }

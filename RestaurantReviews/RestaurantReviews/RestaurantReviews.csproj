@@ -60,9 +60,6 @@
   <ItemGroup>
     <Compile Include="Classes\Review.cs" />
     <Compile Include="Classes\Serial.cs" />
-    <Compile Include="Interfaces\IFunctions.cs" />
-    <Compile Include="Interfaces\IRestaurant.cs" />
-    <Compile Include="Interfaces\IReview.cs" />
     <Compile Include="Classes\Restaurant.cs" />
     <Compile Include="Classes\LibHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

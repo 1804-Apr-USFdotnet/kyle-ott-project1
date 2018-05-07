@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantReviews", "RestaurantReviews\RestaurantReviews.csproj", "{F27E06D0-53B9-4C17-8E44-125CD68766FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{8595FE96-FA0B-427C-B6CE-451DCDCE55FC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Data", "Restaurant.Data\Restaurant.Data.csproj", "{E8755C2A-15DC-4DDE-B44B-B4992CEC6AF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantReviewsTest", "RestaurantReviewsTest\RestaurantReviewsTest.csproj", "{82FAD051-5F5B-42FB-93BE-296966CD9DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantReviews.Web", "RestaurantReviews.Web\RestaurantReviews.Web.csproj", "{5BDE6FFC-AEEA-4220-8439-1B0BD23D9420}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{F27E06D0-53B9-4C17-8E44-125CD68766FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F27E06D0-53B9-4C17-8E44-125CD68766FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F27E06D0-53B9-4C17-8E44-125CD68766FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8595FE96-FA0B-427C-B6CE-451DCDCE55FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8595FE96-FA0B-427C-B6CE-451DCDCE55FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8595FE96-FA0B-427C-B6CE-451DCDCE55FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8595FE96-FA0B-427C-B6CE-451DCDCE55FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E8755C2A-15DC-4DDE-B44B-B4992CEC6AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8755C2A-15DC-4DDE-B44B-B4992CEC6AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8755C2A-15DC-4DDE-B44B-B4992CEC6AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{82FAD051-5F5B-42FB-93BE-296966CD9DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82FAD051-5F5B-42FB-93BE-296966CD9DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82FAD051-5F5B-42FB-93BE-296966CD9DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDE6FFC-AEEA-4220-8439-1B0BD23D9420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDE6FFC-AEEA-4220-8439-1B0BD23D9420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDE6FFC-AEEA-4220-8439-1B0BD23D9420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDE6FFC-AEEA-4220-8439-1B0BD23D9420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

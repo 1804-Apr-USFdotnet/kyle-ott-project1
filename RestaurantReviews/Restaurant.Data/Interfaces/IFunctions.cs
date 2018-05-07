@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Interfaces
 {
-    interface IFunctions
+    public interface IFunctions
     {
         void GetTopThree();
         void DisplayAll();

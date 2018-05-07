@@ -133,5 +133,7 @@ namespace Restaurant.Data
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
         }
+
+        //public System.Data.Entity.DbSet<Restaurant.Web.Models.RestRevViewModel> RestRevViewModels { get; set; }
     }
 }
