@@ -4,17 +4,24 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using Restaurant.Data;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Restaurant.Web.Models
 {
     public class Review
     {
         private LibHelper _db = new LibHelper();
-
+        [Required(ErrorMessage = "ID is required.")]
+        [RegularExpression(@"[0-9]", ErrorMessage = "Invalid ID Value")]
         public int ID { get; set; }
+        [Required(ErrorMessage = "Rating is required.")]
+        [RegularExpression(@"[1-5]", ErrorMessage = "Invalid ID Value")]
         public int Rating { get; set; }
+        [Required(ErrorMessage = "CustName is required.")]
         public string CustName { get; set; }
+        [Required(ErrorMessage = "RestID is required to link the review to a Restaurant.")]
+        [RegularExpression(@"[0-9]", ErrorMessage = "Invalid RestID Value")]
         public int RestID { get; set; }
 
         //add a review for a restaurant

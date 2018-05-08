@@ -28,12 +28,15 @@ namespace Restaurant.Web.Models
     }
     public class Restaurant
     {
-        //private RestContext _db = new RestContext();
         private LibHelper _db = new LibHelper();
-
+        [Required (ErrorMessage= "ID is required.")]
+        [RegularExpression(@"[0-9]", ErrorMessage = "Invalid ID Value")]
         public int ID { get; set; }
+        [Required(ErrorMessage = "Name is required.")]
         public string Name { get; set; }
+        [Required(ErrorMessage = "FoodType is required.")]
         public string FoodType { get; set; }
+        [Required(ErrorMessage = "Address is required.")]
         public string Address { get; set; }
         public double AverageRating { get; set; }
         //return all restaurants and make a list
@@ -41,6 +44,7 @@ namespace Restaurant.Web.Models
         {
             
             var rests = _db.GetRestaurants().ToList();
+            //rests.Sort();
             var result = rests.Select(x => ToWeb(x));
             return result;
         }

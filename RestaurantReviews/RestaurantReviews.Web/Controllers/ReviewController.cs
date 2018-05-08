@@ -5,15 +5,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Restaurant.Web.Models;
+using NLog;
 
 namespace RestaurantReviews.Web.Controllers
 {
     public class ReviewController : Controller
     {
-        //Restaurant.Web.Models.Reviews reviews = new Restaurant.Web.Models.Reviews();
-        Restaurant.Web.Models.Review reviews = new Review();
-        Review review = new Review();
 
+        Review review = new Review();
+        Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         //gets all reviews based on restaurants ID
         public ActionResult Reviews(int id)
@@ -50,6 +50,7 @@ namespace RestaurantReviews.Web.Controllers
             }
             catch (Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }
@@ -70,8 +71,9 @@ namespace RestaurantReviews.Web.Controllers
                 review.UpdateReview(review);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }
@@ -95,6 +97,7 @@ namespace RestaurantReviews.Web.Controllers
             }
             catch (Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }

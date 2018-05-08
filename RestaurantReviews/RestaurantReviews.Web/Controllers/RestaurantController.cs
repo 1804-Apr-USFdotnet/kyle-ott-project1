@@ -5,13 +5,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Restaurant.Web.Models;
+using NLog;
 
 namespace RestaurantReviews.Web.Controllers
 {
     public class RestaurantController : Controller
     {
         Restaurant.Web.Models.Restaurant restaurant = new Restaurant.Web.Models.Restaurant();
-
+        Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         public ActionResult Index()
         {
@@ -66,6 +67,7 @@ namespace RestaurantReviews.Web.Controllers
             }
             catch(Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }
@@ -88,6 +90,7 @@ namespace RestaurantReviews.Web.Controllers
             }
             catch(Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }
@@ -111,6 +114,7 @@ namespace RestaurantReviews.Web.Controllers
             }
             catch (Exception e)
             {
+                logger.Debug(e);
                 return View();
             }
         }
