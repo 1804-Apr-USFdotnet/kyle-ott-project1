@@ -16,7 +16,7 @@ namespace RestaurantReviews.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View();//test commit
         }
 
         //Search all restaurants for any string entered
